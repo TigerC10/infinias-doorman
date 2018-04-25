@@ -1,0 +1,13 @@
+{
+  "infiniasHost": "http://localhost:18779",
+  "infiniasUsername": "admin",
+  "infiniasPassword": "admin",
+  "dashConfig": {
+    "buttons": {
+      "00:00:00:00:00:00": {
+        "doorIds": "1",
+        "duration": 10
+      }
+    }
+  }
+}

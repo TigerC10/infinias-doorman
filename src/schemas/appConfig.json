@@ -1,0 +1,57 @@
+{
+  "title": "App Configuration",
+  "type": "object",
+  "properties": {
+    "infiniasHost": {
+      "description": "Infinias Access Control Host",
+      "type": "string"
+    },
+    "infiniasUsername": {
+      "description": "Infinias Access Control Username",
+      "type": "string"
+    },
+    "infiniasPassword": {
+      "description": "Infinias Access Control Password",
+      "type": "string"
+    },
+    "dashConfig": {
+      "description": "Amazon dash button configuration",
+      "type": "object",
+      "properties": {
+        "device": {
+          "description": "Network Device to listen for button presses",
+          "type": "string"
+        },
+        "buttons": {
+          "description": "List of dash buttons",
+          "type": "object",
+          "patternProperties": {
+            "^([0-9A-Fa-f]{2}:){5}[0-9A-F]{2}$": {
+              "type": "object",
+              "properties": {
+                "doorIds": {
+                  "type": "string"
+                },
+                "duration": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "doorIds",
+                "duration"
+              ]
+            }
+          },
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      },
+      "required": ["buttons"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["infiniasHost", "infiniasUsername", "infiniasPassword"],
+  "additionalProperties": false
+}
