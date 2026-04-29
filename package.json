@@ -28,7 +28,7 @@
     "cap": "^0.2.0",
     "es6-promisify": "^6.0.0",
     "form-data": "^2.3.2",
-    "isomorphic-fetch": "^2.2.1"
+    "isomorphic-fetch": "^3.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
