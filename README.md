@@ -1,5 +1,7 @@
 # Infinias Access Control Doorman
 
+> **⚠️ This project has been archived and is no longer actively maintained.**
+
 Trigger an Infinias IntelliM Access Control door to unlock with:
 
 1. An Amazon Dash Button
